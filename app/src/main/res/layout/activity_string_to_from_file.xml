@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".">
+    <ImageView
+        android:id="@+id/iv_sistema"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:src="@drawable/sistema"/>
+
+
+<TextView
+    android:id="@+id/tv_encryptFile"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/white"
+    android:text="@string/encrypt_text_to_file"
+    app:layout_constraintTop_toBottomOf="@+id/iv_sistema"
+    android:layout_marginTop="10dp"
+    android:textStyle="bold"
+    android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_text_tosecure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_sistema"
+        android:layout_marginTop="40dp"
+        android:text="Text to Secure"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+<EditText
+    android:id="@+id/et_encrypt_txtfile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Input Something Here"
+    app:layout_constraintTop_toBottomOf="@+id/iv_sistema"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="50dp"
+/>
+
+    <TextView
+        android:id="@+id/tv_password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_encrypt_txtfile"
+        android:text="Password"
+        tools:ignore="MissingConstraints" />
+
+<EditText
+    android:id="@+id/et_password_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/tv_password_input"
+    android:hint="Input Password"/>
+
+    <Button
+        android:id="@+id/bt_save_encrypt"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="Save"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_decryptFile"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:text="@string/decrypt_and_read_text_from_file"
+        app:layout_constraintTop_toBottomOf="@+id/tv_encryptFile"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_pass_decrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        app:layout_constraintTop_toBottomOf="@+id/bt_save_encrypt"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/et_decrypt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Password"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pass_decrypt"
+        />
+
+    <Button
+        android:id="@+id/bt_read_decrypt"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="Save"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/et_decrypt_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_stringdecrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_decrypt_password"
+        tools:text="dadad"
+        android:padding="10dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_updatepass"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/white"
+        android:text="Update Password"
+        app:layout_constraintTop_toBottomOf="@+id/tv_decryptFile"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_oldpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_stringdecrypt"
+        android:layout_marginTop="50dp"
+        android:text="Old Password"
+        tools:ignore="MissingConstraints"
+        android:padding="10dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_oldpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Old Password"
+        app:layout_constraintTop_toBottomOf="@+id/tv_oldpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+    android:id="@+id/tv_newpass"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/et_oldpass"
+    android:text="Input new Password"
+    android:padding="5dp"
+    tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_passwordnewt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_newpass"
+        android:hint="Input Password"/>
+
+    <TextView
+        android:id="@+id/tv_newpass_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_passwordnewt"
+        android:text="Confirm password"
+        android:padding="5dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_newpass_confirm"
+        android:hint="Confirm Password"/>
+
+    <Button
+        android:id="@+id/bt_updatepass"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="Update"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

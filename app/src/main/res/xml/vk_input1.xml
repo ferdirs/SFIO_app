@@ -1,0 +1,6 @@
+<android.inputmethodservice.KeyboardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard"
+    android:background="@color/colorAccent"
+    android:keyTextSize="@dimen/sp_17"
+    android:labelTextSize="@dimen/sp_12"
+    android:keyBackground="@drawable/vk_keyboard_background" />

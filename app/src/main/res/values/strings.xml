@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">vkey_kotlin_final</string>
+    <string name="sdk_version">SDK Version :</string>
+    <string name="firmware_version">Firmware Version :</string>
+    <string name="firmware_return_code">Firmware Return Code :</string>
+    <string name="demo_sfio">Demo SFIO</string>
+    <string name="demo_sfio_string_to_from_file">Demo SFIO String to/from File</string>
+    <string name="demo_sfio_block_data_encryption">Demo SFIO Block Data Encryption</string>
+    <string name="demo_sfio_existing_text_file">Demo SFIO Existing Text File</string>
+    <string name="string_kosong"> No Threat Found </string>
+    <string name="encrypt_text_to_file">Encrypt Text to File</string>
+    <string name="decrypt_and_read_text_from_file">Decrypt and Read Text from File</string>
+</resources>
